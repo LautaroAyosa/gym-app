@@ -5,7 +5,7 @@ I've encountered a simple issue at the last couple of gymnasiums that I've been 
 
 Obviously, this is not a big issue to normal people but, for me, as a programmer and Engineering enthusiast, it's a pretty big deal. I found something that could be simplified and I have to do something about it.
 
-### ROADMAP
+### Future Features
 - List all possible gymnasium exercises.
 - Being able to add how many repetitions and series you have to do in each exercise.
 - Being able to determine different exercises per day.
@@ -14,3 +14,12 @@ Obviously, this is not a big issue to normal people but, for me, as a programmer
 - Support user accounts and customization with authentication.
 - Let users determine the frequency and preferred scheduling of their workouts.
 - More...
+
+### What I want the app to be able to do
+###### Chapter 1
+- Let me save my exercises and the amount of wheight that I use on each one.
+- Save a record of the days that I've been to the gym and what exercises I've done. 
+- Support accounts with authentication (2FA if possible), so more people can use the app.
+- Create a mobile aplication using React Native and Expo.
+
+###### Chapter 2
