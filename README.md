@@ -13,3 +13,4 @@ Obviously, this is not a big issue to normal people but, for me, as a programmer
 - Automatically show the exercises of the day as soon as you open the app.
 - Support user accounts and customization with authentication.
 - Let users determine the frequency and preferred scheduling of their workouts.
+- More...
