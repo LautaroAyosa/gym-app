@@ -16,10 +16,24 @@ Obviously, this is not a big issue to normal people but, for me, as a programmer
 - More...
 
 ### What I want the app to be able to do
-###### Chapter 1
+##### Chapter 1
 - Let me save my exercises and the amount of wheight that I use on each one.
 - Save a record of the days that I've been to the gym and what exercises I've done. 
 - Support accounts with authentication (2FA if possible), so more people can use the app.
 - Create a mobile aplication using React Native and Expo.
 
-###### Chapter 2
+##### Chapter 2
+- Add statistics to let users follow their improvements.
+- Design and implement a good UX/UI design for the web app.
+- Design and implement a good UX/UI design for the mobile app.
+- Publish the app on the Google Play Store.
+
+##### Chapter 3
+- Create a new type of user called "Trainer".
+- Let regular users (Let's call them "Athletes") subscribe or follow Trainers to see their exercises of the week.
+- Let Trainers modify Athletes routines if they are allowed to.
+- Look for a way to verify Trainers and their knowledge.
+
+##### Chapter 4
+- Add transactions to let Trainers earn money from telling Athletes what to do.
+- Let trainers offer different types of services with different prices
