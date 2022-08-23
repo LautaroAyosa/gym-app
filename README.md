@@ -16,6 +16,11 @@ Obviously, this is not a big issue to normal people but, for me, as a programmer
 - More...
 
 ### What I want the app to be able to do
+##### Chapter 0
+- [ ] Decide what tipe of Database is best for this application (SQL or No-SQL)
+- [ ] Design the Database
+- [ ] 
+
 ##### Chapter 1
 - Let me save my exercises and the amount of wheight that I use on each one.
 - Save a record of the days that I've been to the gym and what exercises I've done. 
