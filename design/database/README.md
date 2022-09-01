@@ -1,12 +1,13 @@
 # Database Design
-- 
-
 
 ## User Requirements
-- Each Person could have 1-7 individualised WorkoutRoutines, depending on the day. (Perhaps even more -> AM workouts / PM workouts)
-- Each WorkoutRoutine has an individual set of Exercises, with some crossover e.g. someone could do Bench Press on Monday and on Friday afterall.
-- Each Exercise has a number of Sets
-- Each Set has a number of Reps
+- Each Person could have multiple Routines, depending on the day.
+- Each Person could use one routine multiple days.
+- Each Routine has multiple Workouts.
+- Each Workout has multiple sets of reps.
+- Each Workout has multiple weights. 
+- Each Workout has one Exercise.
+- 
 
 ## Design Concept
 ### 1. People / Users
@@ -14,13 +15,13 @@ Could also add things like weight, height, age (or birth date) and more to calcu
 Each person has multiple **Routines**
 ```
 User: {
-    id: string,
-    name: string,
-    email: string,
-    password: string,
-    salt: string,
+    userName: String *Required*,
+    firstName: String,
+    lastName: String,
+    email: String *Required*,
+    password: String *Required*,
     is_deleted: boolean,
-    Routines,
+    Routines: ObjectId,
 }
 ```
 ### 2. Exercises
@@ -29,11 +30,11 @@ This table does not have wheight, reps, etc.
 Could add muscle target, equipment, dificulty
 ```
 Exercise: {
-    id: string,
-    name: string,
-    desc: string,
-    img: string,
-    type: string,
+    name: String,
+    desc: String,
+    img: String,
+    body_part: String,
+    type: String,
 }
 ```
 ### 3. Workouts
@@ -42,24 +43,20 @@ Each **Workout** has one **Exercise**. Reps and Weight are arrays because you co
 Could add ORM or One Repetition Maximum (Basically is your personal record, but you have to do a maximum of 1 repetition).
 ```
 Workout: {
-    id: string
-    Exercise: {
-        id: string
-    }
-    reps: array (optional),
-    weight: array (optional),
-    duration: number (optional),
-    distance: number (optional),
+    Exercise: ObjectId *Required*
+    reps: Array,
+    weight: Array,
+    duration: Number,
+    distance: Number,
 }
 ```
 ### 4. Routines
 A routine has multiple workouts and one or multiple week days.
 ```
 Routine: {
-    id: string,
-    name: string,
-    desc: string,
-    week_day: array,
-    Workouts: Object,
+    name: String,
+    desc: String,
+    week_day: Array,
+    Workouts
 }
 ```
